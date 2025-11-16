@@ -22,7 +22,9 @@ getPokemon.addEventListener("click", () => {
     })
 
     .then((data) => {
+    // Extraer los tipos (es un array que debemos mapear)
       const tipos = data.types.map((tipoObj) => tipoObj.type.name).join(", ");
+
       const template = `
         <h2>${data.name.toUpperCase()}</h2>
         <img src="${data.sprites.front_default}" alt"${data.name}">
@@ -32,6 +34,5 @@ getPokemon.addEventListener("click", () => {
       `;
       pokemonInfoContainer.innerHTML = template;
     })
-
     .catch((error) => console.log("Error al obtener información", error));
 });

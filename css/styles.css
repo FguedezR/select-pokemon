@@ -26,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    background: #232323;
 }
 ol, ul {
 	list-style: none;
@@ -45,3 +46,9 @@ table {
 
 
 /* estilos */
+
+section {
+    /* display: flex; */
+    margin: 20px;
+}
+
