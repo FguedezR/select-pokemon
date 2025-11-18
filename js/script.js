@@ -28,9 +28,9 @@ getPokemon.addEventListener("click", () => {
       const template = `
         <h2>${data.name.toUpperCase()}</h2>
         <img src="${data.sprites.front_default}" alt"${data.name}">
-        <p><strong>Tipo:</strong> ${tipos}</p></p>
-        <p><strong>Altura:</strong> ${data.height / 10} m</p>
-        <p><strong>Peso:</strong> ${data.weight / 10} kg</p>
+        <p class="btn-special"><strong>Tipo:</strong> ${tipos}</p>
+        <p class="btn-special"><strong>Altura:</strong> ${data.height / 10} m</p>
+        <p class="btn-special"><strong>Peso:</strong> ${data.weight / 10} kg</p>
       `;
       pokemonInfoContainer.innerHTML = template;
     })

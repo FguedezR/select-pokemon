@@ -3,7 +3,7 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+small, strike, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -46,9 +46,73 @@ table {
 
 
 /* estilos */
-
-section {
-    /* display: flex; */
-    margin: 20px;
+.container {
+	max-width: 350px;
+	margin: 0 auto;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.container h1 {
+	font-size: 30px;
+	text-align: center;
+	margin: 20px 0;
+	color: #fff;
+}
+
+section p {
+	color: #fff;
+	font-size: 20px;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+.pokemon-form select {
+	width: 100%;
+	padding: 10px;
+	margin: 0 0 20px 0;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.pokemon-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px;
+	background: black;
+	padding: 1em;
+	border-radius: 10px;
+	border: 1px #373737 solid;
+}
+
+section#pokemon-info {
+	margin: 20px;
+	padding: 1em;
+}
+
+section img {
+	width: 160px;
+	pointer-events: none;
+}
+
+button#get-pokemon {
+	width: 100%;
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.btn-special {
+	padding: 5px 10px;
+	margin: 10px;
+	font-size: 16px;
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+}
